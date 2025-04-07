@@ -2,7 +2,11 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
-const fetch = require('node-fetch'); 
+
+let fetch;
+(async () => {
+  fetch = (await import('node-fetch')).default;
+})();
 
 const Schema = mongoose.Schema;
 
@@ -164,4 +168,4 @@ router.post('/deleteSpecificRoute', checkAuth, (req, res) => {
     });
 });
 
-exports.routes = router;
+module.exports = router;
