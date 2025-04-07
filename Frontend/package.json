@@ -13,6 +13,7 @@
     "@react-navigation/native": "^6.1.18",
     "@react-navigation/native-stack": "^6.11.0",
     "expo": "~52.0.0",
+    "expo-notifications": "^0.29.14",
     "expo-sensors": "~12.9.1",
     "expo-status-bar": "~1.11.1",
     "react": "18.2.0",
